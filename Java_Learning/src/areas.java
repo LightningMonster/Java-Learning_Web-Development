@@ -9,7 +9,7 @@ public class areas {
 		obj.circumference();
 		obj.rectangle();
 		obj.rectangleP();
-		
+
 	}
 }
 
