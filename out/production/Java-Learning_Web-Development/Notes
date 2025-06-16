@@ -1,0 +1,358 @@
+#----------------------------------------------------
+# Array
+
+1. What is an Array?
+	An array is a collection of elements of the same data type, stored in contiguous memory locations.
+	Arrays start from index 0.
+	Once created, the size of an array cannot be changed.
+
+2. Declaring an Array
+	Syntax:
+		dataType[] arrayName;  // Recommended
+		dataType arrayName[];  // Also valid but less preferred
+		
+	Examples:
+		int[] numbers;   // Declares an integer array
+		double[] prices; // Declares a double array
+		char[] letters;  // Declares a character array
+		String[] names;  // Declares a String array
+		
+3. Creating an Array (Instantiation):
+	
+	Syntax: arrayName = new dataType[size];
+	
+	Example: int[] numbers = new int[5];  // Creates an array of size 5
+	
+4. Initializing an Array
+
+	*Method 1: Assigning Values Individually
+	
+		int[] numbers = new int[5]; 
+		numbers[0] = 10;
+		numbers[1] = 20;
+		numbers[2] = 30;
+		numbers[3] = 40;
+		numbers[4] = 50;
+		
+	*Method 2: Using an Array Literal
+		
+		int[] numbers = {10, 20, 30, 40, 50};
+		
+	*Method 3: Using a Loop
+	
+		int[] numbers = new int[5];
+		for (int i = 0; i < numbers.length; i++) {
+		    numbers[i] = i * 10;
+		}
+		
+5. Accessing Array Elements
+
+	int[] numbers = {10, 20, 30, 40, 50};
+	System.out.println(numbers[2]); // Output: 30
+	numbers[3] = 100; // Changes value at index 3
+	
+6. Finding Array Length
+
+	int[] numbers = {10, 20, 30, 40, 50};
+	System.out.println(numbers.length); // Output: 5
+	
+7. Looping Through an Array
+
+	*Using a For Loop:
+		
+		int[] numbers = {10, 20, 30, 40, 50};
+		for (int i = 0; i < numbers.length; i++) {
+		    System.out.print(numbers[i] + " ");
+		}
+		
+	*Using an Enhanced For Loop (For-Each):
+	
+		int[] numbers = {10, 20, 30, 40, 50};
+		for (int num : numbers) {
+		    System.out.print(num + " ");
+		}
+	
+8. Multi-Dimensional Arrays
+
+	A 2D array is an array of arrays.
+	
+	* Declaring a 2D Array
+		
+		int[][] matrix = new int[3][3]; // 3 rows, 3 columns
+		
+	* Initializing a 2D Array
+	
+		int[][] matrix = {
+						    {1, 2, 3},
+						    {4, 5, 6},
+						    {7, 8, 9}
+						};
+		
+	* Accessing Elements
+		
+		System.out.println(matrix[1][2]); // Output: 6
+		
+		
+9. Jagged Arrays (Different Column Sizes)
+	
+	int[][] jagged = new int[3][];
+	jagged[0] = new int[2]; // Row 0 has 2 columns
+	jagged[1] = new int[3]; // Row 1 has 3 columns
+	jagged[2] = new int[1]; // Row 2 has 1 column
+	
+
+10. Passing Arrays to Methods
+
+	public class ArrayExample {
+	    public static void printArray(int[] arr) {
+	        for (int num : arr) {
+	            System.out.print(num + " ");
+	        }
+	    }
+	
+	    public static void main(String[] args) {
+	        int[] numbers = {10, 20, 30, 40};
+	        printArray(numbers);
+	    }
+	}
+	
+11. Returning an Array from a Method
+
+	public class ArrayReturn {
+	    public static int[] createArray() {
+	        return new int[]{5, 10, 15, 20};
+	    }
+	
+	    public static void main(String[] args) {
+	        int[] arr = createArray();
+	        System.out.println(Arrays.toString(arr)); // Output: [5, 10, 15, 20]
+	    }
+	}
+	
+
+12. Array Utility Methods (Using Arrays Class)
+	
+	Java provides java.util.Arrays for array operations.
+	
+	Sorting an Array:
+		
+		import java.util.Arrays;
+		int[] numbers = {50, 20, 40, 10, 30};
+		Arrays.sort(numbers);
+		System.out.println(Arrays.toString(numbers)); // Output: [10, 20, 30, 40, 50]
+		
+	Filling an Array:
+	
+		int[] arr = new int[5];
+		Arrays.fill(arr, 7);
+		System.out.println(Arrays.toString(arr)); // Output: [7, 7, 7, 7, 7]
+		
+	Copying an Array:
+		
+		int[] original = {1, 2, 3, 4, 5};
+		int[] copy = Arrays.copyOf(original, original.length);
+		System.out.println(Arrays.toString(copy)); // Output: [1, 2, 3, 4, 5]
+				
+	Checking Array Equality:
+	
+		int[] a = {1, 2, 3};
+		int[] b = {1, 2, 3};
+		System.out.println(Arrays.equals(a, b)); // Output: true
+		
+13. Limitations of Arrays
+	*Fixed Size: Once declared, size cannot be changed.
+	*No Built-in Methods for Modification: Cannot add or remove elements easily.
+	*Memory Wastage: If too large, unused memory is wasted.
+		
+-------------------------------------------------------------------------------------------------
+
+# Array List
+
+1️ Introduction:
+
+	* ArrayList is a resizable array implementation in Java.
+	* It is part of Java’s Collection Framework (java.util.ArrayList).
+	* Unlike arrays, ArrayList can grow and shrink dynamically.
+	
+2️ Creating an ArrayList:
+	
+	import java.util.ArrayList;
+
+	public class Example {
+	    public static void main(String[] args) {
+	        ArrayList<Integer> numbers = new ArrayList<>(); // Creating an ArrayList
+	    }
+	}
+	
+	* The diamond operator (<>) allows Java to infer the type (Integer).
+	* ArrayList<Integer> can only store Integer objects, not primitive int.
+	
+3️ Adding Elements:
+
+	* Use .add(value) to add an element.
+	
+		numbers.add(10);
+		numbers.add(20);
+		numbers.add(30);
+	
+	* Use .add(index, value) to insert at a specific index.
+	
+		numbers.add(1, 15); // Inserts 15 at index 1
+		
+4️ Accessing Elements:
+	
+	* Use .get(index) to retrieve an element.	
+	
+		System.out.println(numbers.get(1)); // Output: 15
+		
+5️ Modifying Elements:
+	
+	* Use .set(index, newValue) to replace an element.
+
+		numbers.set(1, 25); // Changes element at index 1 to 25
+		
+6️ Removing Elements:
+
+	* Use .remove(index) to remove an element at a specific index.
+	
+		numbers.remove(2); // Removes element at index 2
+		
+7️ Checking Size:
+
+	* Use .size() to get the number of elements.
+
+		System.out.println(numbers.size()); // Output: 3
+		
+8️ Searching Elements:
+	
+	* Use .contains(value) to check if an element exists.
+		
+		if (numbers.contains(20)) {
+		    System.out.println("20 is in the list");
+		}
+		
+	* Use .indexOf(value) to find the first index of an element.
+	
+		int index = numbers.indexOf(20);
+		
+9️ Checking if Empty:
+
+	* Use .isEmpty() to check if the list is empty.
+	
+		if (numbers.isEmpty()) {
+		    System.out.println("List is empty");
+		}
+		
+10 Iterating Over ArrayList:
+
+	*  Using for Loop:
+		
+		for (int i = 0; i < numbers.size(); i++) {
+		    System.out.println(numbers.get(i));
+		}
+		
+	* Using for-each Loop
+		
+		for (Integer num : numbers) {
+		    System.out.println(num);
+		}
+	
+	* Using forEach() Method (Lambda Expression)
+
+		numbers.forEach(num -> System.out.println(num));
+		
+1️1 Sorting an ArrayList:
+
+	* Use Collections.sort(list) to sort the list.
+	
+		import java.util.Collections;
+		Collections.sort(numbers); // Sorts in ascending order
+		
+12 Converting ArrayList to Array:
+
+	* Use .toArray() to convert ArrayList to an array.
+	
+		Integer[] array = numbers.toArray(new Integer[0]);
+		
+
+13  Difference Between Array and ArrayList
+
+Feature				| Array								| ArrayList
+Size				| Fixed								| Dynamic
+Performance			| Faster (for simple use)			| Slightly slower (resizing overhead)
+Built-in Methods	| Limited							| Many (add, remove, sort, etc.)
+Type				| Can store primitives & objects	| Stores only objects
+		
+		
+-------------------------------------------------------------------------------------------------------------
+
+String buffer & string builder
+String sc = new String();
+
+
+area of circle
+area of circumference
+area of rectangle
+	
+	
+	
+-------------------------------------------------------------------------------------------------------------------
+Static variable
+static method
+static block
+
+instanciation
+----------------------------------------------------------------------------------------------------------------
+
+#Encapsulation
+* is a process of wrapping code data together into a single unit.
+* variable is data member
+
+Advantages:
+
+	Data hiding
+	Improved security
+	Better modularity
+	Easier maintenance and modification
+	Simplified testing and debugging
+	Code reusability
+	Controlled access to fields using getters and setters
+	Enables validation before setting values
+	Encourages object-oriented design principles
+	Prevents unintended interference from external classes
+
+
+-------------------------------------------------------------------------------------------
+Inheritance
+
+is A relation
+has A relation
+
+types:
+single level
+multilevel
+multiple
+hierarchical
+hybrid
+
+
+
+
+Error:
+	1. logical error
+	2. compiler error
+	3. runtime error (Exception)
+	
+Exception
+	1. checked exception (Forcefully handled by JAVA)
+		IO exception
+		SQLException
+		Class not found
+	2. unchecked exception (handled by developer)
+		array out of bound
+		null point
+		arithmetic
+		
+		
+#throw and throws
+
