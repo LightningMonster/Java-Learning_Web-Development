@@ -1,6 +1,6 @@
-package com.Introduction_Setup.P02_Comments_in_Java;
+package com.core01.Introduction_Setup;
 
-public class CommentsInJava {
+public class P02_CommentsInJava {
 	//1: Single line comment
 	
 	// This is a comment

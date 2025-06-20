@@ -1,4 +1,4 @@
-package com.Introduction_Setup.P04_Java_Naming_Conventions;
+package com.core01.Introduction_Setup;
 
 // **Package Names**
 //
@@ -10,7 +10,7 @@ package com.Introduction_Setup.P04_Java_Naming_Conventions;
 
 //Class name: - Start with **uppercase**
 //			  - Use **PascalCase** (each word starts with a capital letter)
-public class JavaNamingConventions {
+public class P04_JavaNamingConventions {
 	public static void main (String[] args) {
 		
 		// Variable Names: - Start with **lowercase**

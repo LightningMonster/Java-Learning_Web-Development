@@ -1,6 +1,6 @@
-package com.Introduction_Setup.P03_Curly_Braces_and_Indentation_in_Java;
+package com.core01.Introduction_Setup;
 
-public class CurlyBracesAndIndentation {
+public class P03_CurlyBracesAndIndentation {
 	public static void main(String[] args) {
 		if (5 > 2) {
 			System.out.println("True");

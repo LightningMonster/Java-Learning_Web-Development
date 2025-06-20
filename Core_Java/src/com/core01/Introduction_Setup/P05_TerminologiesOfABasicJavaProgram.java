@@ -1,6 +1,6 @@
-package com.Introduction_Setup.P05_TerminologiesOfABasicJavaProgram;
+package com.core01.Introduction_Setup;
 
-public class TerminologiesOfABasicJavaProgram {	
+public class P05_TerminologiesOfABasicJavaProgram {	
 	
 //	### **Main Method**
 //
