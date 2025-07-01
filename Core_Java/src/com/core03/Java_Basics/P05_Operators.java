@@ -3,7 +3,7 @@ package src.com.core03.Java_Basics;
 public class P05_Operators {
     public static void main(String[] args) {
 
-        // 🔹 1. Arithmetic Operators
+        // 1. Arithmetic Operators
         int a = 10, b = 3;
         System.out.println("Arithmetic Operators:");
         System.out.println("a + b = " + (a + b)); // Addition
@@ -12,7 +12,7 @@ public class P05_Operators {
         System.out.println("a / b = " + (a / b)); // Division
         System.out.println("a % b = " + (a % b)); // Modulus
 
-        // 🔹 2. Relational (Comparison) Operators
+        // 2. Relational (Comparison) Operators
         System.out.println("\nRelational Operators:");
         System.out.println("a == b: " + (a == b));   // Equal to
         System.out.println("a != b: " + (a != b));   // Not equal to
@@ -21,14 +21,14 @@ public class P05_Operators {
         System.out.println("a >= b: " + (a >= b));   // Greater than or equal
         System.out.println("a <= b: " + (a <= b));   // Less than or equal
 
-        // 🔹 3. Logical Operators
+        // 3. Logical Operators
         boolean x = true, y = false;
         System.out.println("\nLogical Operators:");
         System.out.println("x && y: " + (x && y));   // Logical AND
         System.out.println("x || y: " + (x || y));   // Logical OR
         System.out.println("!x: " + (!x));           // Logical NOT
 
-        // 🔹 4. Bitwise Operators
+        // 4. Bitwise Operators
         int m = 5, n = 3; // binary: 0101 & 0011
         System.out.println("\nBitwise Operators:");
         System.out.println("m & n = " + (m & n));    // Bitwise AND
@@ -38,7 +38,7 @@ public class P05_Operators {
         System.out.println("m << 1 = " + (m << 1));  // Left shift
         System.out.println("m >> 1 = " + (m >> 1));  // Right shift
 
-        // 🔹 5. Assignment Operators
+        // 5. Assignment Operators
         int value = 10;
         System.out.println("\nAssignment Operators:");
         value += 5;  // value = value + 5
@@ -52,7 +52,7 @@ public class P05_Operators {
         value %= 3;
         System.out.println("value %= 3: " + value);
 
-        // 🔹 6. Unary Operators
+        // 6. Unary Operators
         int num = 5;
         System.out.println("\nUnary Operators:");
         System.out.println("++num = " + (++num));   // Pre-increment
@@ -61,7 +61,7 @@ public class P05_Operators {
         System.out.println("num-- = " + (num--));   // Post-decrement
         System.out.println("Final num = " + num);
 
-        // 🔹 7. Ternary Operator
+        // 7. Ternary Operator
         int age = 18;
         String result = (age >= 18) ? "Adult" : "Minor";
         System.out.println("\nTernary Operator:");
