@@ -39,6 +39,6 @@ public class P08_Strings {
         System.out.println("Trimmed string: '" + spaced.trim() + "'");
 
         // 10. replace()
-        System.out.println("Replace 'Java' with 'World': " + spaced.replace("Java", "World"));
+        System.out.println(" Replace 'Java' with 'World': " + spaced.replace("Java", "World"));
     }
 }
