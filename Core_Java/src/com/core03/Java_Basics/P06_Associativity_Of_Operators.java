@@ -1,6 +1,6 @@
 package src.com.core03.Java_Basics;
 
-public class P06_AssociativityOfOperators {
+public class P06_Associativity_Of_Operators {
     public static void main(String[] args) {
 
         System.out.println("🔹 1. Left to Right Associativity (Arithmetic)");
