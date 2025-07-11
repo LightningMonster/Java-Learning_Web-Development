@@ -8,7 +8,6 @@ public class P12_While_Loop {
 
         // While Loop
         while(count < 5){
-
             System.out.println("Loop number: " + count);
             count++;
         }
