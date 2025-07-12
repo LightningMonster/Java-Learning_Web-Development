@@ -13,7 +13,7 @@ Print both arrays
 Sorted Array: [1, 2, 5, 9]
 Copied Array (size 6): [1, 2, 5, 9, 0, 0]
 */
-public class P4_Use_Arrays_sort_and_Arrays_copyOf {
+public class P5_Use_Arrays_sort_and_Arrays_copyOf {
     public static void main(String[] args) {
         int[] arr = {9, 2, 5, 1};
 
