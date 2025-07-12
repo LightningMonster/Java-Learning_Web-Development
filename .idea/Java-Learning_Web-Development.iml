@@ -5,9 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Core_Java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_Learning/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Practice_Code/1 Data Types and Variables" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Practice_Code/2 Operators" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Practice_Code/2 Data Types and Variables" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Practice_Code/3 Control Flow Statements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Practice_Code/4 Operators" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
