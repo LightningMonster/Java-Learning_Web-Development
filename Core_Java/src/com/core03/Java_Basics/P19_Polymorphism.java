@@ -3,11 +3,12 @@ package src.com.core03.Java_Basics;
 
 public class P19_Polymorphism {
     public static void main(String[] args) {
-        //
+        // Compile-time Polymorphism: Method Overloading
         calculator cal = new calculator();
         System.out.println("int add: "+ cal.add(2,4));
         System.out.println("double add: "+ cal.add(2.4,4.4));
 
+        // Runtime Polymorphism: Method Overriding
         parent obj = new child();
         obj.greet();
     }
