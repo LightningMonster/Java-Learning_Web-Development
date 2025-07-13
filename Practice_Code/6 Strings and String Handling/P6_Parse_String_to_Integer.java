@@ -1,5 +1,4 @@
 /*
-6. Parse String to Integer
 🔸 Problem:
 Given a string "100", convert it to integer and add 50 to it.
 
