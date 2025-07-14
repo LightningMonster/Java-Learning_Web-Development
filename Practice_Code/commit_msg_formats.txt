@@ -5,3 +5,6 @@ Practice Question: 1. Sum of Elements in 1D Array
 // after completing set
 Completed set: 5. Arrays
 Practice Question: 1. Sum of Elements in 1D Array
+
+Lesson: 7. Object-Oriented Programming (OOP)
+Topic: 13. Nested/Inner Classes
