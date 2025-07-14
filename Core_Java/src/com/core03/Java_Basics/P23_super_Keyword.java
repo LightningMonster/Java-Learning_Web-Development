@@ -4,7 +4,6 @@ package src.com.core03.Java_Basics;
 
 public class P23_super_Keyword {
     public static void main(String[] args) {
-
         B b = new B();
         b.print();
     }
