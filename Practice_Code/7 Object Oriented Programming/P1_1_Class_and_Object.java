@@ -1,4 +1,4 @@
-/*
+/* 1. Class and Object
 * Q1. Create a Student class with fields name, roll, and grade.
 * Create 2 objects and print their details.*/
 
