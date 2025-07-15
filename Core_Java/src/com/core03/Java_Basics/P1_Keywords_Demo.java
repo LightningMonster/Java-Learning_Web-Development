@@ -1,6 +1,6 @@
-package com.core03.Java_Basics;
+package src.com.core03.Java_Basics;
 //Java Program to demonstrate Keywords
-public class P01_Keywords_Demo {
+public class P1_Keywords_Demo {
 	 public static void main(String[] args)
 	    {
 	      	// Using final and int keyword

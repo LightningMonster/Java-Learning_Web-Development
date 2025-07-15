@@ -1,6 +1,6 @@
 package com.core03.Java_Basics;
 
-public class P03_NonPrimitiveDataTypes {
+public class P4_2_NonPrimitiveDataTypes {
 	interface Animal{
 		void sound();
 	}

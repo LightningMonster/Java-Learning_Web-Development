@@ -1,6 +1,6 @@
 package com.core03.Java_Basics;
 
-public class P02_Primitive_Data_Types {
+public class P4_1_Primitive_Data_Types {
 	public static void main(String[] args) {
 		
 		//boolean data type
