@@ -10,3 +10,4 @@ public class P04_TakingInput {
         System.out.println("You entered: "+a);
     }
 }
+
